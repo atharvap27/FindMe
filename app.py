@@ -52,23 +52,6 @@ def main():
 
     if 'creds' in st.session_state and st.session_state['creds']:
         multimodal_search = MultimodalSearch()
-
-        # query = st.text_input("Enter your query:")
-        # if st.button("Search"):
-        #     if len(query) > 0:
-        #         results = multimodal_search.search(query)
-        #         if results:
-        #             st.subheader("Search Results:")
-        #             for i, result in enumerate(results[:3]):
-        #                 col = st.columns([)[i]
-        #                 with col:
-        #                     st.write(f"Score: {round(result.score * 100, 2)}%")
-        #                     st.image(result.content, use_column_width=True)
-        #         else:
-        #             st.warning("No results found.")
-        #     else:
-                # st.warning("Please enter a query.")
-
         query = st.text_input("Enter your query:")
         if st.button("Search"):
             if len(query) > 0:
